@@ -674,7 +674,7 @@ eval("window.addEventListener(\"scroll\", function () {\n  if (window.scrollY >=
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("document.addEventListener(\"DOMContentLoaded\", function () {\n  var header = document.querySelector(\".header\");\n  var footer = document.querySelector(\".footer\");\n  var main = document.querySelector(\"main#main\");\n  var body = document.body;\n  var headerHeight = header.offsetHeight;\n  var footerHeight = footer.offsetHeight + 60;\n  var footerHeightWithAdminBar = footer.offsetHeight + 60 + 32;\n  if (body.classList.contains(\"admin-bar\")) {\n    main.style.minHeight = \"calc(100vh - \" + footerHeightWithAdminBar + \"px)\";\n    main.style.paddingTop = headerHeight + \"px\";\n  } else {\n    main.style.minHeight = \"calc(100vh - \" + footerHeight + \"px)\";\n    main.style.paddingTop = headerHeight + \"px\";\n  }\n});\n\n//# sourceURL=webpack:///./js/src/sections/main.js?");
+eval("document.addEventListener(\"DOMContentLoaded\", function () {\n  var header = document.querySelector(\".header\");\n  var footer = document.querySelector(\".footer\");\n  var main = document.querySelector(\"main#main\");\n  var body = document.body;\n  var headerHeight = header.offsetHeight;\n  var footerHeight = footer.offsetHeight + 5;\n  var footerHeightWithAdminBar = footer.offsetHeight + 5 + 32;\n  if (body.classList.contains(\"admin-bar\")) {\n    main.style.minHeight = \"calc(100vh - \" + footerHeightWithAdminBar + \"px)\";\n    main.style.paddingTop = headerHeight + \"px\";\n  } else {\n    main.style.minHeight = \"calc(100vh - \" + footerHeight + \"px)\";\n    main.style.paddingTop = headerHeight + \"px\";\n  }\n});\n\n//# sourceURL=webpack:///./js/src/sections/main.js?");
 
 /***/ }),
 

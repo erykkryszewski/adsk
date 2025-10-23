@@ -3,13 +3,15 @@
     text-align: center;
     background-color: $theme-color;
     position: relative;
+    max-width: 1250px;
+    margin: 0 auto 70px;
 
     &--background {
         background: $very-light-gray;
     }
 
     &--subpage {
-        margin: 0 0 -70px;
+        margin: 0;
     }
 
     &__background {
@@ -39,7 +41,7 @@
     }
 
     &__wrapper {
-        padding: 130px 0;
+        padding: 40px 0;
         position: relative;
         z-index: 2;
     }

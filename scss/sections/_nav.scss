@@ -8,10 +8,6 @@
     transition: all 250ms ease;
     z-index: 10;
 
-    &--fixed {
-        padding: 5px 0;
-    }
-
     &__logo {
         width: 250px;
         flex-shrink: 0;

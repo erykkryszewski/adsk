@@ -5,8 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
     let body = document.body;
 
     let headerHeight = header.offsetHeight;
-    let footerHeight = footer.offsetHeight + 60;
-    let footerHeightWithAdminBar = footer.offsetHeight + 60 + 32;
+    let footerHeight = footer.offsetHeight + 5;
+    let footerHeightWithAdminBar = footer.offsetHeight + 5 + 32;
 
     if (body.classList.contains("admin-bar")) {
         main.style.minHeight = "calc(100vh - " + footerHeightWithAdminBar + "px)";
