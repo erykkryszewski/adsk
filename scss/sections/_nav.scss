@@ -267,7 +267,7 @@
             z-index: 1;
 
             /* temporary styles */
-            filter: brightness(0);
+            filter: brightness(0) invert(0.98);
             height: 40px;
             width: 40px;
         }

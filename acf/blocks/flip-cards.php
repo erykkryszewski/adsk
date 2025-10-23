@@ -8,7 +8,7 @@ $cards = get_field("cards");
 ?>
 
 <?php if(!empty($cards)): ?>
-<div class="flip-cards <?php if(!empty($background)) { echo 'flip-cards--background';}?>">
+<div class="flip-cards <?php if($background == 'true') { echo 'flip-cards--background';}?>">
     <?php if(!empty($section_id)):?>
     <div class="section-id" id="<?php echo esc_html($section_id);?>"></div>
     <?php endif;?>

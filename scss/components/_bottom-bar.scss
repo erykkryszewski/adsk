@@ -1,7 +1,8 @@
 .bottom-bar {
     width: 100%;
-    background: $dark;
+    background: $black;
     padding: 0;
+    border-top: 1px solid $border-color;
 
     &__wrapper {
         width: 100%;

@@ -7,9 +7,7 @@
     top: 0;
     transition: all 150ms ease;
     min-height: 91px;
-
-    /* temporary styles */
-    background: $white;
+    background: $black;
 
     &--fixed {
         box-shadow: 0 0 19px -10px rgba($dark, 0.7);

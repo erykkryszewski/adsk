@@ -1,7 +1,7 @@
 .top-bar {
-    background: $very-light-gray;
     width: 100%;
-    border-bottom: 1px solid $light-gray;
+    border-bottom: 1px solid $border-color;
+    background: $black;
 
     &__wrapper {
         width: 100%;
@@ -80,11 +80,5 @@
 
     &__social-media {
         margin: 0;
-
-        a {
-            max-width: 25px;
-            height: 25px;
-            filter: brightness(0);
-        }
     }
 }

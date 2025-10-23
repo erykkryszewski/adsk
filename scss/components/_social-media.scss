@@ -11,9 +11,17 @@
         width: 100%;
         max-width: 25px;
         height: 25px;
+        overflow: hidden;
+        filter: none;
 
-        img {
-            filter: brightness(0.15);
+        img,
+        svg {
+            width: 100%;
+            height: auto;
+            display: block;
+            min-width: 25px;
+            min-height: 25px;
+            filter: brightness(0.98);
         }
     }
 }

@@ -34,22 +34,19 @@ if ($orphans == "true") {
     <head>
         <meta charset="<?php bloginfo('charset'); ?>" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1" />
-        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet" />
         <?php wp_head(); ?>
     </head>
 
     <body <?php body_class($custom_classes); ?>>
         <div class="preloader">
-            <div class="preloader__logo">
-                <?php if (!empty($theme_sign)) { echo wp_get_attachment_image($theme_sign, 'full', '', ['class' => '']); } else { echo ''; } ?>
-            </div>
+            <div class="preloader__logo"><?php if (!empty($theme_sign)) { echo wp_get_attachment_image($theme_sign, 'full', '', ['class' => '']); } else { echo ''; } ?></div>
         </div>
         <header class="header <?php if (!is_front_page()) { echo 'header--subpage'; } ?>">
             <div class="top-bar">
                 <div class="container">
                     <div class="top-bar__wrapper">
                         <div class="top-bar__content top-bar__content--left">
-                            <a href="tel:<?php echo esc_html($global_phone_number); ?>" class="top-bar__phone ercodingtheme-phone-number"><?php echo esc_html($global_phone_number); ?></a>
                             <a href="mailto:<?php echo esc_html($global_email); ?>" class="top-bar__email"><?php echo esc_html($global_email); ?></a>
                         </div>
                         <?php if (!empty($global_social_media)): ?>
@@ -57,9 +54,7 @@ if ($orphans == "true") {
                             <ul class="social-media top-bar__social-media <?php if (!is_front_page()) { echo 'top-bar__social-media--subpage'; } ?>">
                                 <?php foreach ($global_social_media as $key => $item): ?>
                                 <li>
-                                    <a href="<?php echo esc_url_raw($item['link']); ?>" target="_blank">
-                                        <?php if (!empty($item['icon'])) { echo wp_get_attachment_image($item['icon'], 'large', '', ['class' => '']); } ?>
-                                    </a>
+                                    <a href="<?php echo esc_url_raw($item['link']); ?>" target="_blank"><?php if (!empty($item['icon'])) { echo wp_get_attachment_image($item['icon'], 'large', '', ['class' => '']); } ?></a>
                                 </li>
                                 <?php endforeach; ?>
                             </ul>
@@ -100,13 +95,9 @@ if ($orphans == "true") {
                         <?php endif; ?> <?php if (!empty($header_button)): ?>
                         <a href="<?php echo esc_html($header_button['url']); ?>" class="button nav__button <?php if (!is_front_page()) { echo 'nav__button--subpage'; } ?>" target="<?php echo esc_html($header_button['target']); ?>">
                             <?php if (!empty($header_button_before_icon)): ?>
-                            <span class="button__icon button__icon--before">
-                                <?php echo wp_get_attachment_image($header_button_before_icon, 'full', '', [ 'loading' => 'eager', 'decoding' => 'async', ]); ?>
-                            </span>
+                            <span class="button__icon button__icon--before"><?php echo wp_get_attachment_image($header_button_before_icon, 'full', '', [ 'loading' => 'eager', 'decoding' => 'async', ]); ?></span>
                             <?php endif; ?> <?php echo esc_html($header_button['title']); ?> <?php if (!empty($header_button_after_icon)): ?>
-                            <span class="button__icon button__icon--after">
-                                <?php echo wp_get_attachment_image($header_button_after_icon, 'full', '', [ 'loading' => 'eager', 'decoding' => 'async', ]); ?>
-                            </span>
+                            <span class="button__icon button__icon--after"><?php echo wp_get_attachment_image($header_button_after_icon, 'full', '', [ 'loading' => 'eager', 'decoding' => 'async', ]); ?></span>
                             <?php endif; ?>
                         </a>
                         <?php endif; ?>
