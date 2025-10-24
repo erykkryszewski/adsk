@@ -18,6 +18,7 @@
     line-height: 1 !important;
     position: relative;
     overflow: hidden;
+    justify-content: center;
 
     @media (width <= 449px) {
         padding: 12px 20px;
@@ -57,7 +58,7 @@
     &--checkout,
     &--continue-shopping,
     &--update-cart {
-        min-width: 184px;
+        min-width: 198px;
         text-align: center;
     }
 
@@ -67,7 +68,7 @@
 
     &--continue-shopping,
     &--update-cart {
-        margin: 10px 0 0;
+        margin: 15px 0 0;
         border: 1px solid $text-color;
         background: transparent;
         color: $text-color;

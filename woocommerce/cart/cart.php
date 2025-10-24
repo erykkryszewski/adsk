@@ -176,7 +176,7 @@ do_action('woocommerce_before_cart'); ?>
     		 */
     		do_action('woocommerce_cart_collaterals');
     	?>
-			<a href="/sklep" class="button button--continue-shopping"><?php _e('Go to shop', 'ercodingtheme');?></a>
+			<a href="/" class="button button--continue-shopping"><?php _e('Wróć do sklepu', 'ercodingtheme');?></a>
     </div>
   </div>
 </div>

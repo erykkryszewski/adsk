@@ -32,3 +32,21 @@ function exclude_category_from_shop_page($query)
         $query->set("tax_query", $tax_query);
     }
 }
+
+// redirect only shop archive and category pages
+add_action("template_redirect", function () {
+    if (is_admin()) {
+        return;
+    }
+    if (function_exists("wp_doing_ajax") && wp_doing_ajax()) {
+        return;
+    }
+    if (defined("REST_REQUEST") && REST_REQUEST) {
+        return;
+    }
+
+    if (is_shop() || is_post_type_archive("product") || is_product_category()) {
+        wp_safe_redirect("/produkt/adsk-imo-plyta-fizyczna/", 301);
+        exit();
+    }
+});

@@ -14,8 +14,7 @@ $global_opening_hours = get_field("global_opening_hours", "options");
 ?>
 
 <?php if (!empty($form_id)): ?>
-<div class="contact <?php if ($background == 'true') { echo 'contact--background'; } ?>"
->
+<div class="contact <?php if ($background == 'true') { echo 'contact--background'; } ?>">
     <?php if (!empty($section_id)): ?>
     <div class="section-id" id="<?php echo esc_html($section_id); ?>"></div>
     <?php endif; ?>
@@ -31,7 +30,7 @@ $global_opening_hours = get_field("global_opening_hours", "options");
                     <?php endif; ?> <?php if (!empty($text)): ?> <?php echo apply_filters('acf_the_content', str_replace('&nbsp;', ' ', $text)); ?> <?php endif; ?> <?php if (!empty($global_phone_number)): ?>
                     <a class="contact__phone ercodingtheme-phone-number" href="tel:<?php echo esc_html($global_phone_number); ?>">Tel: <?php echo esc_html($global_phone_number); ?></a>
                     <?php endif; ?> <?php if (!empty($global_email)): ?>
-                    <a class="contact__email" href="mailto:<?php echo esc_html($global_email); ?>">Mail: <?php echo esc_html($global_email); ?></a>
+                    <a class="contact__email" href="mailto:<?php echo esc_html($global_email); ?>"><?php echo esc_html($global_email); ?></a>
                     <?php endif; ?>
                     <!-- <?php if (!empty($global_opening_hours)): ?>
               <h4 class="contact__subtitle"><?php esc_html_e('Godziny otwarcia:', 'ercodingtheme'); ?></h4>

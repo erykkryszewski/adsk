@@ -4,14 +4,14 @@
 
     .woocommerce-message {
         display: flex;
-        flex-flow: column-reverse wrap;
+        flex-flow: column wrap;
         justify-content: center;
         align-items: center;
         margin: 40px 0;
-        background-color: $very-light-gray;
+        background-color: $theme-color;
         color: $text-color;
         clear: both;
-        border-left: 1px solid $very-light-gray;
+        border-left: 1px solid $theme-color;
         padding: 16px 20px;
         position: relative;
         list-style: none outside;
@@ -19,7 +19,10 @@
         font-weight: 500;
 
         .button {
-            margin: 15px 0 0;
+            margin: 15px auto 0;
+            background: $white;
+            color: $black;
+            border: 1px solid $white;
         }
     }
 
@@ -39,6 +42,10 @@
 
             @media (width <= 1199px) {
                 margin: 0 0 40px;
+            }
+
+            * {
+                pointer-events: none;
             }
         }
 
@@ -118,6 +125,7 @@
         .woocommerce-tabs {
             width: 100%;
             margin: 50px 0 80px;
+            padding: 0 15px;
 
             h3 {
                 margin: 25px 0 0;
@@ -245,7 +253,7 @@
                         object-fit: cover;
                         border-radius: $theme-border-radius;
                         border-top-left-radius: $theme-border-radius;
-                        object-position: top center;
+                        object-position: 0 -30px;
                     }
                 }
 
@@ -322,6 +330,7 @@
         .woocommerce-product-details__short-description {
             @extend .paragraph;
             text-align: left;
+            font-size: 15px;
 
             > * {
                 margin: 20px 0 0;
@@ -346,6 +355,7 @@
                     display: block;
                     padding: 0 0 0 18px;
                     position: relative;
+                    font-size: 15px;
 
                     &::before {
                         display: block;
@@ -390,6 +400,7 @@
 
         p {
             text-align: left;
+            font-size: 15px;
         }
 
         .woocommerce-variation-availability {
@@ -481,7 +492,7 @@
                     padding: 5px 5px 5px 10px !important;
                     border: 1px solid $border-color !important;
                     height: 48px;
-                    color: $black !important;
+                    color: $white !important;
                 }
             }
 
