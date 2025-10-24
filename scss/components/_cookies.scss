@@ -1,7 +1,19 @@
 /* cookieYes */
 
+.cky-consent-container {
+    overflow: hidden;
+}
+
 .cky-consent-container,
 .cky-modal {
+    border-radius: 0 !important;
+    max-width: 100vw;
+
+    .cky-consent-bar {
+        border-radius: 0 !important;
+        max-width: 100vw;
+    }
+
     p,
     button,
     a,
@@ -21,9 +33,9 @@
     }
 
     .cky-btn {
-        border: 1px solid $text-color !important;
+        border: 1px solid $dark !important;
         background: $white !important;
-        color: $text-color !important;
+        color: $dark !important;
         border-radius: $theme-border-radius !important;
         padding: 4px !important;
 
@@ -37,6 +49,7 @@
     .cky-btn-accept {
         background: $theme-color !important;
         color: $white !important;
+        border: 1px solid $theme-color !important;
     }
 }
 

@@ -83,6 +83,12 @@
         }
     }
 
+    &--update-cart {
+        @media (width <= 767px) {
+            margin: 15px 0;
+        }
+    }
+
     &--ghost {
         background: transparent;
         border: 1px solid $text-color;
