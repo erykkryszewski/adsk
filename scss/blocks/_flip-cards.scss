@@ -57,11 +57,15 @@
         overflow: hidden;
 
         @media (width <= 767px) {
-            height: 400px;
+            height: 450px;
         }
 
         &--three-items {
             height: 500px;
+
+            @media (width <= 767px) {
+                height: 450px;
+            }
         }
 
         img {

@@ -22,4 +22,4 @@ if (!defined("ABSPATH")) {
 }
 ?>
 
-<a href="<?php echo esc_url(wc_get_checkout_url()); ?>" class="button button--checkout"><?php esc_html_e('Kasa', 'woocommerce'); ?></a>
+<a href="<?php echo esc_url(wc_get_checkout_url()); ?>" class="button button--checkout"><?php esc_html_e('Przejdź do kasy', 'woocommerce'); ?></a>

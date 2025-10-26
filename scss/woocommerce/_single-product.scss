@@ -254,6 +254,10 @@
                         border-radius: $theme-border-radius;
                         border-top-left-radius: $theme-border-radius;
                         object-position: 0 -30px;
+
+                        @media (width <= 767px) {
+                            object-position: top;
+                        }
                     }
                 }
 
@@ -293,6 +297,10 @@
                 border: 1px solid $very-light-gray;
                 border-radius: $theme-border-radius;
                 overflow: hidden;
+
+                @media (width <= 767px) {
+                    height: 90px;
+                }
 
                 &:first-of-type,
                 &:nth-of-type(2),

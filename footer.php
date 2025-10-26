@@ -36,6 +36,7 @@ $footer_third_column_content = get_field("footer_third_column_content", "options
                             <?php _e('Copyright', 'ercodingtheme');?>
                             © <?php echo date("Y"); ?>&nbsp;<?php _e('ADSK', 'ercodingtheme');?>
                         </p>
+                        <div><a href="/regulamin/">Regulamin sklepu</a><a href="/polityka-prywatnosci/">Polityka prywatności</a></div>
                         <p>
                             Strona stworzona przez
                             <a href="https://ercoding.pl/" target="_blank">Ercoding</a>
